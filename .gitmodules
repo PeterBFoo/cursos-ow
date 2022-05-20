@@ -1,0 +1,3 @@
+[submodule "curso_spring/spring_project/spring-first-project"]
+	path = curso_spring/spring_project/spring-first-project
+	url = https://github.com/PeterBFoo/spring-first-project.git
