@@ -1,11 +1,11 @@
 package edu.poniperro.controllers;
 
+import edu.poniperro.service.UsuarioService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping("/app")
@@ -17,6 +17,18 @@ public class IndexController {
     public String index (Model model) {
         model.addAttribute("titulo", "Hola Spring Framework");
         return "index";
+    }
+
+    @GetMapping("/perfil")
+    public String perfil(Model model) {
+        UsuarioService.perfil(model);
+        return "perfil";
+    }
+
+    @GetMapping("/listar")
+    public String listar(Model model) {
+        UsuarioService.listar(model);
+        return "listar";
     }
 
     // Distintas formas de ponerlo:
