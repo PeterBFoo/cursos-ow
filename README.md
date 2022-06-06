@@ -1,3 +1,3 @@
-# Cursos de Open Webbinars
+# Cursos de Open Webbinars y Udemy
 
-Documentación que he ido juntando sobre los cursos que he realizado en Open Webbinars
+Documentación que he ido juntando sobre los cursos que he realizado en Open Webbinars y Udemy
